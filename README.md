@@ -1,73 +1,81 @@
 # Reka Rius — Developer Portfolio
 
-A responsive developer portfolio inspired by the approved visual mockup. It uses plain HTML, CSS, and JavaScript, so it can be hosted on **GitHub Pages**.
+A responsive, bilingual developer portfolio built with **HTML, CSS, and JavaScript**. The website supports English and Indonesian, includes responsive layouts, and can be hosted on GitHub Pages.
 
-## Important: GitHub Pages vs Laravel
+## Live Website
 
-GitHub Pages only serves static files. It does **not** run PHP/Laravel or host a MariaDB database. This portfolio is the static GitHub Pages edition. If you need Laravel features (login, admin dashboard, database-backed projects or contact submissions), deploy the Laravel app to a PHP host and use MariaDB there.
+Visit the portfolio: **https://kerjareka.github.io/reka-portolio/**
 
-## Before publishing: personalize these details
+## Technologies
 
-Open `index.html` and check:
-- Email: `reka.rius@gmail.com`
-- GitHub: `https://github.com/kerjareka`
-- LinkedIn: replace `https://www.linkedin.com/` with your actual profile URL.
-- Project links: replace the sample GitHub links with each project's actual repository/demo URL.
-- Project descriptions and dates: confirm that every detail is accurate for your experience.
+* HTML5
+* CSS3
+* JavaScript
+* GitHub Pages
 
-The workspace/project illustrations are built with CSS, so no external image assets are required.
+## Project Structure
 
-## Preview locally
+* `index.html` — portfolio content, sections, and page structure.
+* `style.css` — responsive design, layout, and theme styles.
+* `script.js` — interactive features such as language switching, theme toggle, mobile navigation, and footer year.
+* `README.md` — project documentation.
 
-1. Extract the ZIP.
-2. Open `index.html` in a browser.
+## Portfolio Sections
 
-For a local development server, if Python is installed, open a terminal in this folder and run:
+The portfolio includes the following sections:
 
-```bash
-python -m http.server 8000
-```
+* **About Me** — introduction, background, and professional interests.
+* **Projects** — selected projects and development work.
+* **Experience** — relevant professional and organizational experience.
+* **Education** — academic background.
+* **Contact** — contact information and professional links.
 
-Then visit `http://localhost:8000`.
+## Run Locally
 
-## Publish on GitHub Pages
+1. Clone this repository:
 
-### Option A — create a repository named `reka-portfolio`
+   ```bash
+   git clone https://github.com/kerjareka/reka-portolio.git
+   ```
 
-1. Sign in to GitHub.
-2. Create a **public** repository named `reka-portfolio`.
-3. Upload `index.html`, `style.css`, `script.js`, and `README.md` to the repository's root (not inside another nested folder).
-4. Open the repository's **Settings**.
-5. Select **Pages** in the sidebar.
-6. Under **Build and deployment**, choose **Deploy from a branch**.
-7. Choose branch `main` and folder `/(root)`, then click **Save**.
-8. Wait for the deployment to finish. The public URL will be:
+2. Open the project folder:
 
-   `https://YOUR-GITHUB-USERNAME.github.io/reka-portfolio/`
+   ```bash
+   cd reka-portolio
+   ```
 
-   Replace `YOUR-GITHUB-USERNAME` with your exact GitHub username.
+3. Open `index.html` in your browser.
 
-### Option B — use the root GitHub Pages URL
+No additional dependencies or build tools are required for the static website.
 
-If you want the URL `https://YOUR-GITHUB-USERNAME.github.io/`, create a repository named exactly `YOUR-GITHUB-USERNAME.github.io`, then upload the same four files to its root and enable Pages as above.
+## Deployment
 
-## Updating your portfolio
+This portfolio is hosted using GitHub Pages.
 
-1. Edit `index.html` for content and links, or `style.css` for design changes.
-2. Commit and push/upload the changes to the repository's `main` branch.
-3. GitHub Pages will rebuild the site automatically.
+The current publishing configuration is:
 
-## Checklist before sharing with recruiters
+* **Repository:** `kerjareka/reka-portolio`
+* **Branch:** `main`
+* **Publishing folder:** `/(root)`
+* **Live URL:** https://kerjareka.github.io/reka-portolio/
 
-- [ ] Replace the LinkedIn placeholder with your real profile.
-- [ ] Verify the email address is correct and professional.
-- [ ] Add direct links to each real project repository and live demo.
-- [ ] Check the website on mobile and desktop.
-- [ ] Check that every claim, date, and project description is accurate.
-- [ ] Add a custom domain in GitHub Pages settings if you own one (optional).
+To publish updates:
 
-## Files
+1. Edit the relevant HTML, CSS, or JavaScript files.
+2. Commit and push the changes to the `main` branch.
+3. Wait for GitHub Pages to publish the updated version.
+4. Visit the live website and refresh the page to verify the changes.
 
-- `index.html` — portfolio content and sections
-- `style.css` — responsive design and theme styles
-- `script.js` — mobile navigation, theme toggle, active navigation and footer year
+## Customization
+
+To update the portfolio:
+
+* Edit `index.html` to change text, project details, contact information, and links.
+* Edit `style.css` to customize colors, typography, spacing, and responsive layouts.
+* Edit `script.js` to modify interactive behavior.
+
+Before sharing the portfolio professionally, verify that all contact details, project links, descriptions, and experience information are accurate.
+
+## Important Note
+
+GitHub Pages supports static websites and does not execute PHP or Laravel applications or provide a MariaDB database. If you later need features such as authentication, an admin dashboard, or database-backed content, you will need a PHP-compatible hosting environment and a database for the Laravel application.
