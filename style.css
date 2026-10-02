@@ -33,3 +33,44 @@ body.dark-mode{--ink:#e2ebf9;--muted:#aabbd2;--line:#2a3c54;--surface:#132238;--
     height: 200px;
   }
 }
+/* Hen Property Sumbawa project links */
+.project-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.project-links a:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Keep project links aligned inside the project card */
+.project-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 480px) {
+  .project-bottom {
+    align-items: flex-start;
+  }
+
+  .project-links {
+    width: 100%;
+  }
+}
