@@ -12,12 +12,12 @@ body.dark-mode{--ink:#e2ebf9;--muted:#aabbd2;--line:#2a3c54;--surface:#132238;--
   padding: 12px 12px 0;
   overflow: hidden;
 }
-
 .project-image {
   display: block;
   width: 100%;
-  height: 280px;
-  object-fit: cover;
-  object-position: top center;
+  height: 213px;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
+  background: #f5f9ff;
 }
